@@ -28,6 +28,10 @@ jobs:
           docker.mirrors.ustc.edu.cn
           mirror.gcr.io
           dockerproxy.com
+          registry.cn-hangzhou.aliyuncs.com
+          mirror.ccs.tencentyun.com
+          registry.docker-cn.com
+          f1361db2.m.daocloud.io
           $ALIYUN_MIRROR
           "
           image="library/nginx:1.23.1-alpine"
