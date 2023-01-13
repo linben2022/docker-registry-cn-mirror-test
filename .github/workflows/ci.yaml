@@ -32,7 +32,6 @@ jobs:
           mirror.ccs.tencentyun.com
           registry.docker-cn.com
           f1361db2.m.daocloud.io
-          $ALIYUN_MIRROR
           "
           image="library/nginx:1.23.1-alpine"
 
@@ -47,5 +46,3 @@ jobs:
              docker rmi $registry/$image || true
              echo ::endgroup::
           done
-        env:
-          ALIYUN_MIRROR: ${{secrets.ALIYUN_MIRROR}}
